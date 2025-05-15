@@ -1,3 +1,21 @@
+#overlay-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translateY(55%) scale(0.5);
+  transition: all 1s ease;
+}
+
+/* Активный класс для показа надписи */
+#overlay-text.active {
+  opacity: 1;
+  transform: translateY(15%) scale(1);
+}
+
 h1
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,7 +33,7 @@ h3
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
 }
-a{
+#animated-button{
     text-decoration: none;
     color: white;
     background-color: #2AABEE;
@@ -27,7 +45,7 @@ a{
 
     transition: border-color 0.25s, background-color 0.25s;
 }
-a:hover{
+#animated-button:hover{
     background-color: #229ED9;
     border-color: #229ED9;
 }
@@ -36,6 +54,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: all 1s ease;
 }
 div{
     text-align: left;
