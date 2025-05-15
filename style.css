@@ -1,7 +1,7 @@
 #overlay-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(255, 255, 255);
   opacity: 0;
   z-index: 9999;
