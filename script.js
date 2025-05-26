@@ -14,6 +14,4 @@ function setLinks(){
         });
     }
 }
-
 setLinks();
-
