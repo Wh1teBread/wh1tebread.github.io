@@ -1,17 +1,17 @@
-document.getElementById('animated-button').addEventListener('click', function (e) {
-  e.preventDefault(); // Предотвращаем стандартный переход
+function setLinks(){
+    let links = document.getElementsByClassName("link-container");
+    for(let link of links){
+        const attr = link.getAttribute("class");
+        let text;
 
-  const link = this.getAttribute('href');
-  const overlayText = document.getElementById('overlay-text');
-
-  // Меняем фон
-  document.body.style.backgroundColor = '#2AABEE'; // Цвет можно любой
-
-  // Показываем надпись
-  overlayText.classList.add('active');
-
-  // Переход через 2 секунды
-  setTimeout(() => {
-    window.location.href = link;
-  }, 2000);
-});
+        if (attr.includes("telegram")) text = "https://t.me/+iPfIDfzKqT84Y2Zi";
+        if (attr.includes("youtube")) text = "https://www.youtube.com/channel/UCGo8qayYoA7kh9sccGNr-Gg";
+        if (attr.includes("instagram")) text = "https://t.me/+iPfIDfzKqT84Y2Zi";
+        if (attr.includes("vk")) text = "https://vk.com/yahlep";
+        
+        link.addEventListener('click', function () {
+            window.location.href = text;
+        });
+    }
+}
+setLinks();

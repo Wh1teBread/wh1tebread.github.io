@@ -1,61 +1,77 @@
-#overlay-text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position: relative;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  opacity: 0;
-  z-index: 9999;
-  pointer-events: none;
-  transform: translateY(55%) scale(0.5);
-  transition: all 1s ease;
+@media (max-width: 767px) {
+  html{
+  font-size: 10px;
 }
-
-/* Активный класс для показа надписи */
-#overlay-text.active {
-  opacity: 1;
-  transform: translateY(15%) scale(1);
-}
-
-h1
-{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 0;
-}
-h2
-{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    font-size: 100%;
-    margin-top: 0;
-}
-h3
-{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-}
-#animated-button{
-    text-decoration: none;
-    color: white;
-    background-color: #2AABEE;
-    
-    border-color: #2AABEE;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 5px;
-
-    transition: border-color 0.25s, background-color 0.25s;
-}
-#animated-button:hover{
-    background-color: #229ED9;
-    border-color: #229ED9;
+  
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Anonymous Pro', monospace;
+  font-size: large;
+
+  height: 99vh;
+  width: 99vw;
 }
-div{
-    text-align: left;
+h1{
+  margin: 0;
+  font-weight: 100;
+  font-size: 2rem;
+}
+h2{
+  margin: 0;
+  font-weight: 100;
+}
+.main-container{
+  border: 1px solid black;
+  width: fit-content;
+  display: flex;
+}
+.text-container{
+  padding: 2%;
+  font-size: 1.5rem;
+}
+.links-container{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  gap: 1px;
+}
+.link-container{
+  display: inline-flex;
+  background-color: white;
+  cursor: pointer;
+}
+.link-ico{
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+.link-body{
+  align-content: center;
+  width: 15rem;
+  padding-left: 5%;
+  font-size: 1.2rem;
+}
+
+.telegram:hover{
+  background-color: #DFF2FC;
+}
+.youtube:hover{
+  background-color: #FFD9D9;
+}
+.instagram:hover{
+  background-color:#ECE1F4;
+}
+.vk:hover{
+  background-color: #D9EBFF;
 }
