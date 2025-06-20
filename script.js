@@ -9,6 +9,7 @@ function setLinks(){
         if (attr.includes("instagram")) text = "https://t.me/+iPfIDfzKqT84Y2Zi";
         if (attr.includes("vk")) text = "https://vk.com/yahlep";
         if (attr.includes("lttrbxd")) text = "https://letterboxd.com/WatchBread/";
+        if (attr.includes("steam")) text = "https://steamcommunity.com/id/Wh1teBread";
         
         link.addEventListener('click', function () {
             window.location.href = text;
