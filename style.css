@@ -90,6 +90,9 @@ h2{
 .lttrbxd:hover{
   background-color: #FFECD9;
 }
+.steam:hover{
+  background-color: #bbbde0;
+}
 
 .link-container  img{
   transition: all 0.5s ease-out;
